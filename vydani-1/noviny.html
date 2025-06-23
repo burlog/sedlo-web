@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>sedelska-pravda-1</title>
 		<link rel="stylesheet" href="../styles.css">
+		<script src="../script.js"></script>
 		<style>
 			.date::before {
 				content: "Pondělí 23. června 2025";
@@ -335,17 +336,7 @@
 			</div>
 		</div>
 		<script>
-			if (navigator.userAgent.toLowerCase().includes('firefox')) {
-				console.log('Firefox detected. Adjusting styles for compatibility.');
-				document.querySelectorAll("[data-gap]").forEach(el => {
-					const gap = el.getAttribute("data-gap");
-					console.log("Firefox detected. Setting margin-top to ${gap} for element with data-gap attribute.");
-					if (gap) {
-						el.style.marginTop = gap;
-						console.log("Setting margin-top to ${gap} for element with data-gap attribute.");
-					}
-				});
-			}
+			fixFirefoxGap();
 		</script>
 	</body>
 </html>
