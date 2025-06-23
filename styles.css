@@ -5,7 +5,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-family: Georgia, serif;
+	font-family: Newsreader, serif;
 	hyphens: auto;
 
 	counter-reset: page_counter 1;
@@ -44,6 +44,15 @@ body {
 .main-header-title {
 	flex-grow: 1;
 }
+
+/*
+ * libre caslon text
+ * newsreader
+ *
+ * pryc rem, dat to na px
+ * vsude do nadpisu (p) dat line-height
+ * a vybrat font z fonts.google.com
+ */
 
 .main-header-title h1 {
 	margin: 0;
