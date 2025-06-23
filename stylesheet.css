@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Liberation Serif';
+    src: url('LiberationSerif.woff2') format('woff2'),
+        url('LiberationSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation Serif';
+    src: url('LiberationSerif-BoldItalic.woff2') format('woff2'),
+        url('LiberationSerif-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation Serif';
+    src: url('LiberationSerif-Italic.woff2') format('woff2'),
+        url('LiberationSerif-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation Serif';
+    src: url('LiberationSerif-Bold.woff2') format('woff2'),
+        url('LiberationSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

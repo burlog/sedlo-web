@@ -4,9 +4,6 @@
 		<meta charset="UTF-8">
 		<title>sedelska-pravda-1</title>
 		<link rel="stylesheet" href="../styles.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
 		<style>
 			.date::before {
 				content: "Pondělí 23. června 2025";
@@ -168,7 +165,7 @@
 					<p>
 						Podle důvěryhodných zdrojů dorazili stylově – v parním kočáře doprovázeném pochodujícím slonem, údajně jejich starým přítelem z Indie.
 						Willy Fog, stále dokonale upravený s kloboukem na hlavě a hůlkou
-						<img src="chocolax.png" style="margin-top: 1rem;">
+						<img src="chocolax.png" style="margin-top: 18px;">
 						v ruce, ochotně odpovídal na otázky a rozdával autogramy. Princezna Romy po jeho boku zářila, oblečená ve splývavých šatech, které kombinovaly evropskou eleganci s orientálními prvky.
 					</p>
 					<p>
@@ -192,7 +189,7 @@
 					</p>
 					<p>
 						<strong>Dobrý den, pane L. Blíží se léto a s ním i pravidelný rodinný tábor.</strong>
-						<div class="column-break"></div>
+						<div data-gap="25px" class="column-break"></div>
 						<div class="crime">
 							<h4>Letem Sedlem</h4>
 							<ul>
@@ -245,7 +242,7 @@
 
 			<div class="columns">
 				<div class="article">
-					<h2 style="text-align: left; font-size: 1.3rem;">Ze světa sportu</h2>
+					<h2 style="text-align: left; font-size: 23px;">Ze světa sportu</h2>
 					<h4>Fotbalový zápas roku</h4>
 					<p>
 						Místní fotbalový tým FC Sedláci již brzy přivítá na svém hřišti soupeře z dalekého města. Podle informací z klubu se jedná o velmi silného protivníka, který v posledních letech dominuje regionálnímu fotbalu. „Je to pro nás velká výzva,“ říká trenér týmu Michal Caudr. „Ale věříme, že s podporou našich fanoušků dokážeme překvapit.“
@@ -337,5 +334,18 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			if (navigator.userAgent.toLowerCase().includes('firefox')) {
+				console.log('Firefox detected. Adjusting styles for compatibility.');
+				document.querySelectorAll("[data-gap]").forEach(el => {
+					const gap = el.getAttribute("data-gap");
+					console.log("Firefox detected. Setting margin-top to ${gap} for element with data-gap attribute.");
+					if (gap) {
+						el.style.marginTop = gap;
+						console.log("Setting margin-top to ${gap} for element with data-gap attribute.");
+					}
+				});
+			}
+		</script>
 	</body>
 </html>
