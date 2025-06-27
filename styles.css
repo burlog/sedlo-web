@@ -137,7 +137,7 @@ body {
 	hyphens: none;
 }
 
-.main-article p, .article-first-part p, .article-last-part p, .article p, .horoscope li {
+.main-article p, .article-first-part p, .article-last-part p, .article p, .horoscope li, .columns ul li {
 	font-size: 14.3px;
 	text-align: justify;
 	line-height: 1.5;
@@ -213,6 +213,13 @@ body {
 .columns img {
 	width: 100%;
 	margin: 0;
+}
+
+.article ul, .article-first-part ul, .article-last-part ul {
+  list-style: square;
+	list-style-position: inside;
+  padding: 0;
+	margin: 0 0 9px 0;
 }
 
 .column-break {
@@ -347,3 +354,12 @@ body {
 	}
 }
 
+.red {
+	color: red;
+	font-weight: bold;
+}
+
+.quote {
+	border-left: 1px solid #000;
+	padding-left: 9px !important;
+}
