@@ -320,14 +320,6 @@ body {
 	line-height: 1.2;
 }
 
-.date::before {
-	content: "Neděle 10. srpna 2025";
-}
-
-.issue-number::after {
-	content: "0007";
-}
-
 .page-number::before {
 	counter-increment: page_counter;
 	content: counter(page_counter);
@@ -362,4 +354,17 @@ body {
 .quote {
 	border-left: 1px solid #000;
 	padding-left: 9px !important;
+}
+
+.advert {
+}
+
+.advert::before {
+	content: "Reklama";
+	font-size: 8px;
+	text-transform: uppercase;
+	border-top: 1px solid #000;
+	display: block;
+	width: 100%;
+	text-align: right;
 }
