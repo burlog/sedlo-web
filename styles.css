@@ -356,6 +356,18 @@ body {
 	padding-left: 9px !important;
 }
 
+.advert {
+	font-size: 14px;
+}
+
+.advert p {
+	margin: 0;
+}
+
+.advert ul {
+	margin: 0;
+}
+
 .advert::before {
 	content: "Reklama";
 	font-size: 8px;
