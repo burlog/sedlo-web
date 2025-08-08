@@ -356,9 +356,6 @@ body {
 	padding-left: 9px !important;
 }
 
-.advert {
-}
-
 .advert::before {
 	content: "Reklama";
 	font-size: 8px;
@@ -368,3 +365,13 @@ body {
 	width: 100%;
 	text-align: right;
 }
+
+.illustrative::after {
+	content: "Ilustrační foto";
+	font-size: 8px;
+	text-transform: lowercase;
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+
