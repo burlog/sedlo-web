@@ -387,3 +387,28 @@ body {
 	text-align: right;
 }
 
+div.olymp h5 {
+	text-transform: initial;
+	margin-bottom: 3px;
+	margin-top: 0px;
+}
+
+div.olymp h4:before {
+	content: "\00A0\25Aa  "
+}
+
+div.olymp h4 {
+	text-transform: initial;
+	margin: 0px;
+}
+
+div.olymp table {
+	font-size: 14px;
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+div.olymp table th {
+	text-align: left;
+	width: 50%;
+}
